@@ -10,9 +10,9 @@
 My goal is to write psuedocode and alogrithms before actually writing code */
 
 //universal definitions
-let rock = "Rock"
-let paper = "Paper"
-let scissors = "Scissors"
+let rock = "ROCK"
+let paper = "PAPER"
+let scissors = "SCISSORS"
 const rPS = [rock , paper , scissors];
 
 //universal definitions
@@ -20,9 +20,23 @@ const rPS = [rock , paper , scissors];
 //code for computer play selection
 const computerPlay = rPS [Math.floor(Math.random() * rPS.length)];
 const computerSelection = computerPlay
+console.log(computerSelection)
 
-//code for selecting play
-const playerSelection = prompt("Please select Rock, Paper or Scissors")
+//code for selecting play and storing value case insensitive
+const playerSelection = prompt("Please select ROCK, PAPER or SCISSORS")
+if (playerSelection == "rock"){
+    playerSelection.toUpperCase
+}
+else if (playerSelection == "paper"){
+    playerSelection.toUpperCase
+}
+else if (playerSelection == "scissors"){
+    playerSelection.toUpperCase
+}
+else{
+    alert("Try again")
+}
+console.log(playerSelection)
 
 
 
