@@ -14,7 +14,6 @@ let rock = "ROCK"
 let paper = "PAPER"
 let scissors = "SCISSORS"
 const rPS = [rock , paper , scissors];
-
 //universal definitions
 
 //code for computer play selection
@@ -23,10 +22,9 @@ const computerSelection = computerPlay
 console.log(computerSelection)
 
 //code for selecting play and storing value case insensitive
-let playerSelection = prompt("Please select ROCK, PAPER or SCISSORS")
-
+const playerPick = prompt("Please select ROCK, PAPER or SCISSORS")
+const playerSelection = playerPick.toUpperCase()
 console.log(playerSelection)
-
 
 
 
