@@ -27,12 +27,26 @@ const playerSelection = playerPick.toUpperCase()
 console.log(playerSelection)
 
 
-
-function playround(playerSelection , computerSelection){
-    //code goes here
+//code for comparing playerSelection and computerSelection
+let roundResult = function playround(playerSelection , computerSelection){
+if (playerSelection == computerSelection){
+    console.log("DRAW")
+}
+else if (playerSelection == "rock" && computerSelection == "scissors"){
+    console.log("You Win!!")
+}
+else if (playerSelection == "paper" && computerSelection == "rock"){
+    console.log("You Win!!")
+}
+else if (playerSelection == "scissors" && computerSelection == "paper"){
+    console.log("You Win!!")
+}
+else{
+    console.log("Sorry, Try Again")
+}
 }
 
-console.log(playRound(playerSelection, computerSelection));; //code for computer play selection
+console.log(roundResult);; //code for computer play selection
 //change to "return" at end
 
 
