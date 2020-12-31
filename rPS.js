@@ -1,4 +1,3 @@
-<script>
 /* this is where my javascript goes and how to write comments */
 /* This will be a console run Rock Paper Scissors game that will become more realized later. 
 My goal is to write psuedocode and alogrithms before actually writing code */
@@ -44,5 +43,3 @@ else{
 
 console.log(winner);; //code for computer play selection
 //change to "return" at end
-
-</script>
