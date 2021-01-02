@@ -11,7 +11,7 @@ const rPS = [rock , paper , scissors];
 
 
 //code for selecting play and storing value case insensitive
-const playerPick = prompt("Please select ROCK, PAPER or SCISSORS *you forfeit if you pick anything else*")
+const playerPick = prompt("Please select ROCK, PAPER or SCISSORS")
 const playerSelection = playerPick.toUpperCase()
 console.log(playerSelection)
 
