@@ -1,11 +1,21 @@
+html{
+    background-color: rgb(185, 231, 246);
+    color: darkred;
+    
+    
+}
 h1{
     display: flex;
     justify-content: center;
+    text-shadow: #000 0px 0px 0px -1px;
+    color: black
+   
 }
 
 h2{
     display: flex;
     justify-content: center;
+    text-shadow: #000 0px 0px 0px -2px;
 }
 
 .container{
