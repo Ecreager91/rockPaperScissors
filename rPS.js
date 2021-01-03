@@ -7,18 +7,17 @@ let rock = "ROCK"
 let paper = "PAPER"
 let scissors = "SCISSORS"
 const rPS = [rock , paper , scissors];
-const playerSelection = [rock, paper, scissors]
+let playerSelection = [rock, paper, scissors]
 //universal definitions
 
 
 //code for selecting play and storing value case insensitive
 
 const rockBtn = document.querySelector('#rockBtn');
-rockBtn.addEventListener('click', playerSelection(rock), winner => {
+window.addEventListener('click', playerSelection = rock, computerSelection, playRound, winner => {
   alert(winner);
 });
 
-const playerSelection = [rock, paper, scissors]
 console.log(playerSelection)
 
 
@@ -34,13 +33,13 @@ function playRound(playerSelection , computerSelection){
 if (playerSelection == computerSelection){
     return "Draw"
 }
-else if (playerSelection == "ROCK" && computerSelection == "SCISSORS"){
+else if (playerSelection == rock && computerSelection == scissors){
     return "A winner is you!!"
 }
-else if (playerSelection == "PAPER" && computerSelection == "ROCK"){
+else if (playerSelection == paper && computerSelection == rock){
     return "A winner is you!!"
 }
-else if (playerSelection == "SCISSORS" && computerSelection == "ROCK"){
+else if (playerSelection == scissors && computerSelection == rock){
     return "A winner is you!!"
 }
 else{
