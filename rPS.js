@@ -7,18 +7,17 @@ let rock = "ROCK"
 let paper = "PAPER"
 let scissors = "SCISSORS"
 const rPS = [rock , paper , scissors];
-let playerSelection = [rock, paper, scissors]
 //universal definitions
 
 
-//code for selecting play and storing value case insensitive
+//code for button
 
 const rockBtn = document.querySelector('#rockBtn');
-window.addEventListener('click', playerSelection = rock, computerSelection, playRound, winner => {
+window.addEventListener('click', (e.playRound(rock, computerSelection)) => {
   alert(winner);
 });
 
-console.log(playerSelection)
+
 
 
 
