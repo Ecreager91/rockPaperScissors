@@ -7,20 +7,19 @@ let rock = "ROCK"
 let paper = "PAPER"
 let scissors = "SCISSORS"
 const rPS = [rock , paper , scissors];
-
+const playerSelection = [rock, paper, scissors]
 //universal definitions
 
 
 //code for selecting play and storing value case insensitive
+
 const rockBtn = document.querySelector('#rockBtn');
-rockBtn.addEventListener('click', playerPick (rock), playRound => {
-  alert(pwinner);
+rockBtn.addEventListener('click', playerSelection(rock), playRound => {
+  alert(winner);
 });
-const playerSelection = playerPick.toUpperCase()
+
+const playerSelection = [rock, paper, scissors]
 console.log(playerSelection)
-
-
-//player selection
 
 
 
