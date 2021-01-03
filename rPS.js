@@ -7,22 +7,31 @@ let rock = "ROCK"
 let paper = "PAPER"
 let scissors = "SCISSORS"
 const rPS = [rock , paper , scissors];
+
 //universal definitions
 
 
 //code for selecting play and storing value case insensitive
-const playerPick = prompt("Please select ROCK, PAPER or SCISSORS")
+const rockBtn = document.querySelector('#rockBtn');
+rockBtn.addEventListener('click', playerPick (rock), playRound => {
+  alert(pwinner);
+});
 const playerSelection = playerPick.toUpperCase()
 console.log(playerSelection)
+
+
+//player selection
+
+
 
 //code for computer play selection
 const computerPlay = rPS [Math.floor(Math.random() * rPS.length)];
 const computerSelection = computerPlay
-console.log(computerSelection)
+alert(computerSelection)
 
 //code for declaring a winner
-const winner = playround(playerSelection, computerSelection)
-function playround(playerSelection , computerSelection){
+const winner = playRound(playerSelection, computerSelection)
+function playRound(playerSelection , computerSelection){
 if (playerSelection == computerSelection){
     return "Draw"
 }
@@ -41,5 +50,5 @@ else{
 }
 
 
-console.log(winner);; //code for computer play selection
+alert(winner);; //code for computer play selection
 //change to "return" at end
