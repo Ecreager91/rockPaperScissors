@@ -14,7 +14,7 @@ const playerSelection = [rock, paper, scissors]
 //code for selecting play and storing value case insensitive
 
 const rockBtn = document.querySelector('#rockBtn');
-rockBtn.addEventListener('click', playerSelection(rock), playRound => {
+rockBtn.addEventListener('click', playerSelection(rock), winner => {
   alert(winner);
 });
 
@@ -49,5 +49,5 @@ else{
 }
 
 
-alert(winner);; //code for computer play selection
+console.log(winner);; //code for computer play selection
 //change to "return" at end
