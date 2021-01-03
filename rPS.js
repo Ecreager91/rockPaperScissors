@@ -13,7 +13,7 @@ const rPS = [rock , paper , scissors];
 //code for button
 
 const rockBtn = document.querySelector('#rockBtn');
-window.addEventListener('click', (e.playRound(rock, computerSelection)) => {
+window.addEventListener('click', playRound(rock), computerSelection => {
   alert(winner);
 });
 
