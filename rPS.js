@@ -18,9 +18,6 @@ window.addEventListener('click', playRound(rock), computerSelection => {
 });
 
 
-
-
-
 //code for computer play selection
 const computerPlay = rPS [Math.floor(Math.random() * rPS.length)];
 const computerSelection = computerPlay
