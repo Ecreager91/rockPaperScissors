@@ -6,22 +6,21 @@ My goal is to write psuedocode and alogrithms before actually writing code */
 let rock = "ROCK"
 let paper = "PAPER"
 let scissors = "SCISSORS"
-const rPS = [rock , paper , scissors];
+const rPS = [rock , paper , scissors]
+const playerSelection = [rock , paper , scissors];
 //universal definitions
 
 
 //code for button
 
-const rockBtn = document.querySelector('#rPs.html');
-window.addEventListener('click', playRound(rock), computerSelection => {
-  alert(winner);
-});
+
 
 
 //code for computer play selection
 const computerPlay = rPS [Math.floor(Math.random() * rPS.length)];
 const computerSelection = computerPlay
-alert(computerSelection)
+console.log(computerSelection)
+
 
 //code for declaring a winner
 const winner = playRound(playerSelection, computerSelection)
@@ -42,7 +41,10 @@ else{
     return "You Lose, Try Again"
 }
 }
+const rockBtn = document.querySelector('#rPS.html');
+window.addEventListener('click', playerSelection[rock], function playRound(playerSelection, computerSelection){
+  alert(winner)})
 
+console.log(winner)
+//code for computer play selection
 
-alert(winner);; //code for computer play selection
-//change to "return" at end
