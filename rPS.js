@@ -7,23 +7,24 @@ let rock = "ROCK"
 let paper = "PAPER"
 let scissors = "SCISSORS"
 const rPS = [rock , paper , scissors]
-const playerSelection = [rock , paper , scissors];
+let playerSelection = [rock , paper , scissors];
 //universal definitions
 
 
 //code for button
+
 const rockBtn = document.querySelector('#rPS.html');
 window.addEventListener('click', playerSelection[rock], function playRound(playerSelection, computerSelection){
-  alert(winner)})
+  console.log(winner)})
 
 const paperBtn = document.querySelector('#rPS.html');
 window.addEventListener('click', playerSelection[paper], function playRound(playerSelection, computerSelection){
-  alert(winner)})
+  console.log(winner)})
 
 const scissorsBtn = document.querySelector('#rPS.html');
 window.addEventListener('click', playerSelection[scissors], function playRound(playerSelection, computerSelection){
-  alert(winner)})
-
+  console.log(winner)})
+}
 console.log(playerSelection)
 
 //code for computer play selection
