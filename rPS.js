@@ -44,5 +44,5 @@ else{
 }
 
 
-console.log(winner);; //code for computer play selection
+alert(winner);; //code for computer play selection
 //change to "return" at end
