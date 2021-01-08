@@ -13,19 +13,7 @@ let playerSelection = [rock , paper , scissors];
 
 //code for button
 
-const rockBtn = document.querySelector('#rPS.html');
-window.addEventListener('click', playerSelection[rock], function playRound(playerSelection, computerSelection){
-  console.log(winner)})
 
-const paperBtn = document.querySelector('#rPS.html');
-window.addEventListener('click', playerSelection[paper], function playRound(playerSelection, computerSelection){
-  console.log(winner)})
-
-const scissorsBtn = document.querySelector('#rPS.html');
-window.addEventListener('click', playerSelection[scissors], function playRound(playerSelection, computerSelection){
-  console.log(winner)})
-}
-console.log(playerSelection)
 
 //code for computer play selection
 const computerPlay = rPS [Math.floor(Math.random() * rPS.length)];
@@ -53,6 +41,19 @@ else{
 }
 }
 
+const rockBtn = document.querySelector('#rPS.html');
+window.addEventListener('click', playerSelection[rock], function playRound(playerSelection, computerSelection){
+  console.log(winner)})
+
+const paperBtn = document.querySelector('#rPS.html');
+window.addEventListener('click', playerSelection[paper], function playRound(playerSelection, computerSelection){
+  console.log(winner)})
+
+const scissorsBtn = document.querySelector('#rPS.html');
+window.addEventListener('click', playerSelection[scissors], function playRound(playerSelection, computerSelection){
+  console.log(winner)})
+}
+console.log(playerSelection)
 
 console.log(winner)
 //code for computer play selection
