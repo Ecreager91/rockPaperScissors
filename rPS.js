@@ -52,7 +52,7 @@ window.addEventListener('click', playerSelection[paper], function playRound(play
 const scissorsBtn = document.querySelector('#rPS.html');
 window.addEventListener('click', playerSelection[scissors], function playRound(playerSelection, computerSelection){
   console.log(winner)})
-}
+
 console.log(playerSelection)
 
 console.log(winner)
