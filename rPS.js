@@ -21,8 +21,7 @@ const computerSelection = computerPlay
 console.log(computerSelection)
 
 const rockBtn = document.querySelector('#rPS.html');
-window.addEventListener('click', playerSelection[rock], function playRound(playerSelection, computerSelection){
-  console.log(winner)})
+window.addEventListener('click', playerSelection[rock])
 
 const paperBtn = document.querySelector('#rPS.html');
 window.addEventListener('click', playerSelection[paper], function playRound(playerSelection, computerSelection){
