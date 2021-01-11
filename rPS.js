@@ -44,11 +44,11 @@ window.addEventListener('click', playerSelection[rock], function playRound(rock,
   console.log(winner)})
 
 const paperBtn = document.querySelector('#document');
-window.addEventListener('click', playerSelection[paper], function playRound(playerSelection, computerSelection){
+window.addEventListener('click', playerSelection[paper], function playRound(paper, computerSelection){
   console.log(winner)})
 
 const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click', playerSelection[scissors], function playRound(playerSelection, computerSelection){
+window.addEventListener('click', playerSelection[scissors], function playRound(scissors, computerSelection){
   console.log(winner)})
 
 console.log(playerSelection)
