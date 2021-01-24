@@ -7,7 +7,7 @@ let rock = "ROCK"
 let paper = "PAPER"
 let scissors = "SCISSORS"
 var rPS = [rock , paper , scissors]
-let playerSelection = [rock , paper , scissors];
+var playerSelection = [rock, paper, scissors]
 //universal definitions
 
 
@@ -16,44 +16,26 @@ let playerSelection = [rock , paper , scissors];
 
 
 //code for computer play selection
-const computerPlay = rPS [Math.floor(Math.random() * rPS.length)];
-const computerSelection = computerPlay
+let computerPlay = rPS [Math.floor(Math.random() * rPS.length)];
+let computerSelection = computerPlay
 console.log(computerSelection)
 
-const winner = playRound(playerSelection, computerSelection)
-function playRound(playerSelection , computerSelection){
-if (playerSelection == computerSelection){
-    return "Draw"
-}
-else if (playerSelection == rock && computerSelection == scissors){
-    return "A winner is you!!"
-}
-else if (playerSelection == paper && computerSelection == rock){
-    return "A winner is you!!"
-}
-else if (playerSelection == scissors && computerSelection == rock){
-    return "A winner is you!!"
-}
-else{
-    return "You Lose, Try Again"
-}
-}
 
 const rockBtn = document.querySelector('#document');
-window.addEventListener('click', playerSelection[rock], function playRound(rock, computerSelection){
-  console.log(winner)})
+window.addEventListener('click', function playRound(rock, computerSelection){
+  console.log(victor)})
 
 const paperBtn = document.querySelector('#document');
 window.addEventListener('click', playerSelection[paper], function playRound(paper, computerSelection){
-  console.log(winner)})
+  console.log(victor)})
 
 const scissorsBtn = document.querySelector('#document');
 window.addEventListener('click', playerSelection[scissors], function playRound(scissors, computerSelection){
-  console.log(winner)})
+  console.log(victor)})
 
 console.log(playerSelection)
 //code for declaring a winner
-const winner = playRound(playerSelection, computerSelection)
+let victor = playRound(playerSelection, computerSelection)
 function playRound(playerSelection , computerSelection){
 if (playerSelection == computerSelection){
     return "Draw"
@@ -74,6 +56,6 @@ else{
 
 
 
-console.log(winner)
+console.log(victor)
 //code for computer play selection
 
