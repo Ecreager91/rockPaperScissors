@@ -23,16 +23,15 @@ console.log(computerSelection)
 
 const rockBtn = document.querySelector('#document');
 window.addEventListener('click', function playRound(rock, computerSelection){
-  console.log(victor)})
+  return(victor)})
 
 const paperBtn = document.querySelector('#document');
 window.addEventListener('click', function playRound(paper, computerSelection){
-  console.log(victor)})
+  return(victor)})
      
-
 const scissorsBtn = document.querySelector('#document');
 window.addEventListener('click', function playRound(scissors, computerSelection){
-  console.log(victor)})
+  return(victor)})
   
 
 console.log(playerSelection)
