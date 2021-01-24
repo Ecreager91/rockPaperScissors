@@ -6,7 +6,7 @@ My goal is to write psuedocode and alogrithms before actually writing code */
 let rock = "ROCK"
 let paper = "PAPER"
 let scissors = "SCISSORS"
-const rPS = [rock , paper , scissors]
+var rPS = [rock , paper , scissors]
 let playerSelection = [rock , paper , scissors];
 //universal definitions
 
