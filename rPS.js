@@ -26,12 +26,14 @@ window.addEventListener('click', function playRound(rock, computerSelection){
   console.log(victor)})
 
 const paperBtn = document.querySelector('#document');
-window.addEventListener('click', playerSelection[paper], function playRound(paper, computerSelection){
+window.addEventListener('click', function playRound(paper, computerSelection){
   console.log(victor)})
+     
 
 const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click', playerSelection[scissors], function playRound(scissors, computerSelection){
+window.addEventListener('click', function playRound(scissors, computerSelection){
   console.log(victor)})
+  
 
 console.log(playerSelection)
 //code for declaring a winner
