@@ -10,15 +10,25 @@ var rPS = [rock , paper , scissors]
 var playerSelection = [rock, paper, scissors]
 //universal definitions
 
-
-//code for button
-
-
-
 //code for computer play selection
 let computerPlay = rPS [Math.floor(Math.random() * rPS.length)];
 let computerSelection = computerPlay
 console.log(computerSelection)
+
+//code for button
+
+const rockBtn = document.querySelector('#document');
+window.addEventListener('click', function playRound(rock, computerSelection){
+  return(victor)})
+
+const paperBtn = document.querySelector('#document');
+window.addEventListener('click', function playRound(paper, computerSelection){
+  return(victor)})
+     
+const scissorsBtn = document.querySelector('#document');
+window.addEventListener('click', function playRound(scissors, computerSelection){
+  return(victor)})
+  
 
 //code for declaring a winner
 let victor = playRound(playerSelection, computerSelection)
@@ -39,21 +49,6 @@ else{
     return "You Lose, Try Again"
 }
 }
-
-const rockBtn = document.querySelector('#document');
-window.addEventListener('click', function playRound(rock, computerSelection){
-  return(victor)})
-
-const paperBtn = document.querySelector('#document');
-window.addEventListener('click', function playRound(paper, computerSelection){
-  return(victor)})
-     
-const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click', function playRound(scissors, computerSelection){
-  return(victor)})
-  
-
-
 
 
 
