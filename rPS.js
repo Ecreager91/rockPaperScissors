@@ -32,17 +32,17 @@ window.addEventListener('click', function playRound(scissors, computerSelection)
 
 //code for declaring a winner
 let victor = playRound(playerSelection, computerSelection)
-function playRound(rplayerSelection , computerSelection){
+function playRound(playerSelection , computerSelection){
 if (playerSelection == computerSelection){
     return "Draw"
 }
-else if (rock && computerSelection == scissors){
+else if (rock && (computerSelection == scissors)){
     return "A winner is you!!"
 }
-else if (paper && computerSelection == rock){
+else if (paper && (computerSelection == rock)){
     return "A winner is you!!"
 }
-else if (scissors && computerSelection == rock){
+else if (scissors && (computerSelection == rock)){
     return "A winner is you!!"
 }
 else{
