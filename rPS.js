@@ -32,7 +32,7 @@ window.addEventListener('click', function playRound(scissors, computerSelection)
 
 //code for declaring a winner
 let victor = playRound(playerSelection, computerSelection)
-function playRound(rock , computerSelection){
+function playRound(rplayerSelection , computerSelection){
 if (playerSelection == computerSelection){
     return "Draw"
 }
