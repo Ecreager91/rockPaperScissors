@@ -26,7 +26,7 @@ window.addEventListener('click', playerSelection = paper, function playRound(pap
   return(victor)})
      
 const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click', function playRound(scissors, computerSelection){
+window.addEventListener('click', playerSelection = scissors, function playRound(scissors, computerSelection){
   return(victor)})
   
 
