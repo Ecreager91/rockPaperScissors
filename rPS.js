@@ -22,7 +22,7 @@ window.addEventListener('click', playerSelection = rock, function playRound(play
   return(victor)})
 
 const paperBtn = document.querySelector('#document');
-window.addEventListener('click', function playRound(paper, computerSelection){
+window.addEventListener('click', playerSelection = paper, function playRound(paper, computerSelection){
   return(victor)})
      
 const scissorsBtn = document.querySelector('#document');
