@@ -3,11 +3,11 @@
 My goal is to write psuedocode and alogrithms before actually writing code */
 
 //universal definitions
-let rock = "ROCK"
-let paper = "PAPER"
-let scissors = "SCISSORS"
-var rPS = [rock , paper , scissors]
-var playerSelection = [rock, paper, scissors]
+const rock = "ROCK"
+const paper = "PAPER"
+const scissors = "SCISSORS"
+const rPS = [rock , paper , scissors]
+let playerSelection = playerchoice
 //universal definitions
 
 //code for computer play selection
@@ -18,7 +18,7 @@ console.log(computerSelection)
 //code for button
 
 const rockBtn = document.querySelector('#document');
-window.addEventListener('click', function playRound(rock, computerSelection){
+window.addEventListener('click', playerSelection = rock, function playRound(playerSelection, computerSelection){
   return(victor)})
 
 const paperBtn = document.querySelector('#document');
