@@ -7,7 +7,7 @@ const rock = "ROCK"
 const paper = "PAPER"
 const scissors = "SCISSORS"
 const rPS = [rock , paper , scissors]
-let playerSelection = playerchoice
+let playerSelection = [rock, paper, scissors]
 //universal definitions
 
 //code for computer play selection
@@ -16,9 +16,9 @@ let computerSelection = computerPlay
 console.log(computerSelection)
 
 //code for button
-
+function playerPick(){
 const rockBtn = document.querySelector('#document');
-window.addEventListener('click', playerSelection = rock, function playRound(playerSelection, computerSelection){
+window.addEventListener('click', playerSelection = rock, function playRound(rock, computerSelection){
   return(victor)})
 
 const paperBtn = document.querySelector('#document');
@@ -28,10 +28,10 @@ window.addEventListener('click', playerSelection = paper, function playRound(pap
 const scissorsBtn = document.querySelector('#document');
 window.addEventListener('click', playerSelection = scissors, function playRound(scissors, computerSelection){
   return(victor)})
-  
+}
 
 //code for declaring a winner
-let victor = playRound(playerSelection, computerSelection)
+
 function playRound(playerSelection , computerSelection){
 if (playerSelection == computerSelection){
     return "Draw"
@@ -49,6 +49,7 @@ else{
     return "You Lose, Try Again"
 }
 }
+let victor = playRound(playerSelection, computerSelection)
 
 
 
