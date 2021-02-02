@@ -16,7 +16,6 @@ let computerSelection = computerPlay
 console.log(computerSelection)
 
 //code for button
-function playerPick(){
 const rockBtn = document.querySelector('#document');
 window.addEventListener('click', playerSelection = rock, function playRound(rock, computerSelection){
   return(victor)})
@@ -28,7 +27,7 @@ window.addEventListener('click', playerSelection = paper, function playRound(pap
 const scissorsBtn = document.querySelector('#document');
 window.addEventListener('click', playerSelection = scissors, function playRound(scissors, computerSelection){
   return(victor)})
-}
+
 
 //code for declaring a winner
 
