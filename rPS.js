@@ -17,15 +17,15 @@ console.log(computerSelection)
 
 //code for button
 const rockBtn = document.querySelector('#document');
-window.addEventListener('click', playerSelection = rock, function playRound(rock, computerSelection){
+window.addEventListener('click', function playRound(playerSelection, computerSelection){
   return(victor)})
 
 const paperBtn = document.querySelector('#document');
-window.addEventListener('click', playerSelection = paper, function playRound(paper, computerSelection){
+window.addEventListener('click', function playRound(playerSelection, computerSelection){
   return(victor)})
      
 const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click', playerSelection = scissors, function playRound(scissors, computerSelection){
+window.addEventListener('click',  function playRound(playerSelection, computerSelection){
   return(victor)})
 
 
