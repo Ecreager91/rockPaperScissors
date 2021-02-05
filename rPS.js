@@ -28,8 +28,8 @@ window.addEventListener('click', playScissors)
 
 //code for declaring a winner
 
-function playRoundRock(rock , computerSelection){
-if (playerSelection == computerSelection){
+function playRoundRock(computerSelection){
+if (rock == computerSelection){
     return "Draw"
 }
 else if (computerSelection == scissors){
@@ -40,8 +40,8 @@ else{
 }
 }
 
-function playRoundPaper(paper , computerSelection){
-if (playerSelection == computerSelection){
+function playRoundPaper(computerSelection){
+if (paper == computerSelection){
     return "Draw"
 }
 else if (computerSelection == rock){
@@ -52,7 +52,7 @@ else{
 }
 }
 
-function playRoundScissors(scissors , computerSelection){
+function playRoundScissors(computerSelection){
 if (scissors == computerSelection){
     return "Draw"
 }
