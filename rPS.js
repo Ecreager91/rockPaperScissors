@@ -32,7 +32,7 @@ function playRoundRock(rock , computerSelection){
 if (playerSelection == computerSelection){
     return "Draw"
 }
-else if (rock && (computerSelection == scissors)){
+else if (computerSelection == scissors){
     return "A winner is you!!"
 }
 else{
