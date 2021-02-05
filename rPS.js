@@ -28,17 +28,35 @@ window.addEventListener('click', playScissors)
 
 //code for declaring a winner
 
-function playRound(playerSelection , computerSelection){
+function playRoundRock(rock , computerSelection){
 if (playerSelection == computerSelection){
     return "Draw"
 }
 else if (rock && (computerSelection == scissors)){
     return "A winner is you!!"
 }
-else if (paper && (computerSelection == rock)){
+else{
+    return "You Lose, Try Again"
+}
+}
+
+function playRoundPaper(paper , computerSelection){
+if (playerSelection == computerSelection){
+    return "Draw"
+}
+else if (computerSelection == rock){
     return "A winner is you!!"
 }
-else if (scissors && (computerSelection == rock)){
+else{
+    return "You Lose, Try Again"
+}
+}
+
+function playRoundScissors(scissors , computerSelection){
+if (scissors == computerSelection){
+    return "Draw"
+}
+else if (computerSelection == paper){
     return "A winner is you!!"
 }
 else{
@@ -46,9 +64,9 @@ else{
 }
 }
 let victor = playRound(playerSelection, computerSelection)
-const playRock = playRound(rock, computerSelection)
-const playPaper = playRound(paper, computerSelection)
-const playScissors = playRound(scissors, computerSelection)
+const playRock = playRoundRock(rock, computerSelection)
+const playPaper = playRoundPaper(paper, computerSelection)
+const playScissors = playRoundScissors(scissors, computerSelection)
 
 
 console.log(victor)
