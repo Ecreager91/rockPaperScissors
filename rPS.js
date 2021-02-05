@@ -17,16 +17,12 @@ console.log(computerSelection)
 
 //code for button
 const rockBtn = document.querySelector('#document');
-window.addEventListener('click', function playRound(playerSelection, computerSelection){
-  return(victor)})
-
+window.addEventListener('click', playRock)
 const paperBtn = document.querySelector('#document');
-window.addEventListener('click', function playRound(playerSelection, computerSelection){
-  return(victor)})
+window.addEventListener('click', playPaper)
      
 const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click',  function playRound(playerSelection, computerSelection){
-  return(victor)})
+window.addEventListener('click', playScissors)
 
 
 
@@ -50,7 +46,9 @@ else{
 }
 }
 let victor = playRound(playerSelection, computerSelection)
-
+const playRock = playRound(rock, computerSelection)
+const playPaper = playRound(paper, computerSelection)
+const playScissors = playRound(scissors, computerSelection)
 
 
 console.log(victor)
