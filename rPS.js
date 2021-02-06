@@ -8,6 +8,9 @@ const paper = "PAPER"
 const scissors = "SCISSORS"
 const rPS = [rock , paper , scissors]
 let playerSelection = [rock, paper, scissors]
+const playRock = playRoundRock(rock, computerSelection)
+const playPaper = playRoundPaper(paper, computerSelection)
+const playScissors = playRoundScissors(scissors, computerSelection)
 //universal definitions
 
 //code for computer play selection
@@ -52,10 +55,6 @@ else{
     return "You Lose, Try Again"
 }
 }
-const playRock = playRoundRock(rock, computerSelection)
-const playPaper = playRoundPaper(paper, computerSelection)
-const playScissors = playRoundScissors(scissors, computerSelection)
-
 
 //code for button
 const rockBtn = document.querySelector('#document');
