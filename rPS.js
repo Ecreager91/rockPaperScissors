@@ -6,7 +6,7 @@ My goal is to write psuedocode and alogrithms before actually writing code */
 const rock = "ROCK"
 const paper = "PAPER"
 const scissors = "SCISSORS"
-const rPS = [rock , paper , scissors]
+const rPS = [rock, paper, scissors]
 //const playRock = playRoundRock(rock, computerSelection)
 //const playPaper = playRoundPaper(paper, computerSelection)
 //const playScissors = playRoundScissors(scissors, computerSelection)
@@ -15,15 +15,15 @@ const rPS = [rock , paper , scissors]
 //code for computer play selection
 let computerPlay = rPS[Math.floor(Math.random() * rPS.length)];
 let computerSelection = computerPlay
-
+console.log(computerPlay)
 
 
 //player selects rock function
 let playRock = function playRoundRock(computerSelection){
-if (rock === computerSelection){
+if (rPS[0] === computerSelection){
     console.log("Draw")
 }
-else if (computerSelection === scissors){
+else if (computerSelection === rPS[2]){
     console.log("A winner is you!!")
 }
 else{
@@ -33,10 +33,10 @@ else{
 
 //player selects paper function
 let playPaper = function playRoundPaper(computerSelection){
-if (paper === computerSelection){
+if (rPS[1] === computerSelection){
     console.log("Draw")
 }
-else if (computerSelection === rock){
+else if (computerSelection === rPS[0]){
     console.log("A winner is you!!")
 }
 else{
@@ -46,10 +46,10 @@ else{
 
 //player selects scissors function 
 let playScissors = function playRoundScissors(computerSelection){
-if (scissors === computerSelection){
+if (rPS[2] === computerSelection){
     console.log("Draw")
 }
-else if (computerSelection === paper){
+else if (computerSelection === rPS[1]){
     console.log("A winner is you!!")
 }
 else{
