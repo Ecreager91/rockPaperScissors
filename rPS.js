@@ -21,47 +21,47 @@ let computerSelection = computerPlay
 //player selects rock function
 let playRock = function playRoundRock(computerSelection){
 if (rock == computerSelection){
-    return "Draw"
+    console.log("Draw")
 }
 else if (computerSelection == scissors){
-    return "A winner is you!!"
+    console.log("A winner is you!!")
 }
 else{
-    return "You Lose, Try Again"
+    console.log("You Lose, Try Again")
 }
 }
 
 //player selects paper function
 let playPaper = function playRoundPaper(computerSelection){
 if (paper == computerSelection){
-    return "Draw"
+    console.log("Draw")
 }
 else if (computerSelection == rock){
-    return "A winner is you!!"
+    console.log("A winner is you!!")
 }
 else{
-    return "You Lose, Try Again"
+    console.log("You Lose, Try Again")
 }
 }
 
 //player selects scissors function 
 let playScissors = function playRoundScissors(computerSelection){
 if (scissors == computerSelection){
-    return "Draw"
+    console.log("Draw")
 }
 else if (computerSelection == paper){
-    return "A winner is you!!"
+    console.log("A winner is you!!")
 }
 else{
-    return "You Lose, Try Again"
+    console.log("You Lose, Try Again")
 }
 }
 //code for button
 const rockBtn = document.querySelector('#document');
-window.addEventListener('click', playRock())
+window.addEventListener('click', playRock)
 
 const paperBtn = document.querySelector('#document');
-window.addEventListener('click', playPaper())
+window.addEventListener('click', playPaper)
 
 const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click', playScissors())
+window.addEventListener('click', playScissors)
