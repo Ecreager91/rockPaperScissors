@@ -7,11 +7,13 @@ const rock = "ROCK"
 const paper = "PAPER"
 const scissors = "SCISSORS"
 const rPS = [rock , paper , scissors]
-let playerSelection = [rock, paper, scissors]
 const playRock = playRoundRock(rock, computerSelection)
 const playPaper = playRoundPaper(paper, computerSelection)
 const playScissors = playRoundScissors(scissors, computerSelection)
 //universal definitions
+
+
+
 
 //code for computer play selection
 let computerPlay = rPS [Math.floor(Math.random() * rPS.length)];
@@ -56,14 +58,6 @@ else{
 }
 }
 
-//code for button
-const rockBtn = document.querySelector('#document');
-window.addEventListener('click', playRock)
-const paperBtn = document.querySelector('#document');
-window.addEventListener('click', playPaper)
-     
-const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click', playScissors)
 
 
 
