@@ -56,3 +56,12 @@ else{
     return "You Lose, Try Again"
 }
 }
+//code for button
+const rockBtn = document.querySelector('#document');
+window.addEventListener('click', playRock())
+
+const paperBtn = document.querySelector('#document');
+window.addEventListener('click', playPaper())
+
+const scissorsBtn = document.querySelector('#document');
+window.addEventListener('click', playScissors())
