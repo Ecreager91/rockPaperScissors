@@ -61,10 +61,10 @@ else{
 }
 //code for button
 const rockBtn = document.querySelector('#document');
-window.addEventListener('click', computerSelection, playRock())
+window.addEventListener('onClick', playRock(computerSelection()))
 
 const paperBtn = document.querySelector('#document');
-window.addEventListener('click', computerSelection, playPaper())
+window.addEventListener('onClick', playPaper(computerSelection()))
 
 const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click', computerSelection, playScissors())
+window.addEventListener('onClick', playScissors(computerSelection()))
