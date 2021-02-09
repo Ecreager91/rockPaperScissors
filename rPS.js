@@ -38,7 +38,7 @@ else{
 }
 
 //player selects paper function
-let playPaper = function playRoundPaper(computerPlay){
+let playPaper = function playRoundPaper(){
 if (paper == computerPlay){
     console.log("Draw")
     return "Draw"
@@ -54,7 +54,7 @@ else{
 }
 
 //player selects scissors function 
-let playScissors = function playRoundScissors(computerPlay){
+let playScissors = function playRoundScissors(){
 if (scissors == computerPlay){
     console.log("Draw")
     return "Draw"
