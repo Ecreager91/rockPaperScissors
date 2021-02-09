@@ -13,7 +13,7 @@ const rPS = [rock, paper, scissors]
 //universal definitions
 
 //code for computer play selection
-let computerPlay = rPS[Math.floor(Math.random() * rPS.length)];
+function computerPlay() {rPS[Math.floor(Math.random() * rPS.length)];}
 let computerSelection = computerPlay
 console.log(computerPlay)
 
