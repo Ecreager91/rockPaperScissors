@@ -7,30 +7,33 @@ const rock = "ROCK"
 const paper = "PAPER"
 const scissors = "SCISSORS"
 const rPS = [rock, paper, scissors]
-//const playRock = playRoundRock(rock, computerSelection)
-//const playPaper = playRoundPaper(paper, computerSelection)
-//const playScissors = playRoundScissors(scissors, computerSelection)
+
 //universal definitions
 
 //code for computer play selection
-function computerSelection() {
-  let computerPlay = rPS[Math.floor(Math.random() * rPS.length)];
-  console.log(computerPlay)
-  return computerPlay
-  }
+function computerSelection(rPS){
+let computerPick = rPS[Math.floor(Math.random() * rPS.length)];
+  console.log(computerPick)
+  return computerPick
+}
+let computerPlay = computerSelection(rPS)
+  
 
 
 
 //player selects rock function
-let playRock = function playRoundRock(computerPlay){
+let playRock = function playRoundRock(){
 if (rock == computerPlay){
     console.log("Draw")
+    return "Draw"
 }
 else if (computerPlay == scissors){
     console.log("A winner is you!!")
+    return "A winner is you!!"
 }
 else{
     console.log("You Lose, Try Again")
+    return "You Lose, Try Again"
 }
 }
 
@@ -38,12 +41,15 @@ else{
 let playPaper = function playRoundPaper(computerPlay){
 if (paper == computerPlay){
     console.log("Draw")
+    return "Draw"
 }
 else if (computerPlay == rock){
     console.log("A winner is you!!")
+    return "A winner is you!!"
 }
 else{
     console.log("You Lose, Try Again")
+    return "You Lose, Try Again"
 }
 }
 
@@ -51,20 +57,23 @@ else{
 let playScissors = function playRoundScissors(computerPlay){
 if (scissors == computerPlay){
     console.log("Draw")
+    return "Draw"
 }
 else if (computerPlay == paper){
     console.log("A winner is you!!")
+    return "A winner is you!!"
 }
 else{
     console.log("You Lose, Try Again")
+    return "You Lose, Try Again"
 }
 }
 //code for button
 const rockBtn = document.querySelector('#document');
-window.addEventListener('onClick', playRock(computerSelection()))
+window.addEventListener('click', playRock)
 
 const paperBtn = document.querySelector('#document');
-window.addEventListener('onClick', playPaper(computerSelection()))
+window.addEventListener('click', playPaper)
 
 const scissorsBtn = document.querySelector('#document');
-window.addEventListener('onClick', playScissors(computerSelection()))
+window.addEventListener('click', playScissors)
