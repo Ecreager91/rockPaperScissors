@@ -16,6 +16,7 @@ const rPS = [rock, paper, scissors]
 function computerSelection() {
   let computerPlay = rPS[Math.floor(Math.random() * rPS.length)];
   console.log(computerPlay)
+  return computerPlay
   }
 
 
@@ -60,10 +61,10 @@ else{
 }
 //code for button
 const rockBtn = document.querySelector('#document');
-window.addEventListener('click', playRock)
+window.addEventListener('click', computerSelection, playRock)
 
 const paperBtn = document.querySelector('#document');
-window.addEventListener('click', playPaper)
+window.addEventListener('click', computerSelection, playPaper)
 
 const scissorsBtn = document.querySelector('#document');
-window.addEventListener('click', playScissors)
+window.addEventListener('click', computerSelection, playScissors)
