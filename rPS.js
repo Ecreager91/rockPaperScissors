@@ -19,10 +19,10 @@ console.log(computerPlay)
 
 //player selects rock function
 let playRock = function playRoundRock(computerPlay){
-if (rPS[0] === computerPlay){
+if (rock == computerPlay){
     console.log("Draw")
 }
-else if (computerPlay === rPS[2]){
+else if (computerPlay == scissors){
     console.log("A winner is you!!")
 }
 else{
@@ -32,10 +32,10 @@ else{
 
 //player selects paper function
 let playPaper = function playRoundPaper(computerPlay){
-if (rPS[1] === computerPlay){
+if (paper == computerPlay){
     console.log("Draw")
 }
-else if (computerPlay === rPS[0]){
+else if (computerPlay == rock){
     console.log("A winner is you!!")
 }
 else{
@@ -45,10 +45,10 @@ else{
 
 //player selects scissors function 
 let playScissors = function playRoundScissors(computerPlay){
-if (rPS[2] === computerPlay){
+if (scissors == computerPlay){
     console.log("Draw")
 }
-else if (computerPlay === rPS[1]){
+else if (computerPlay == paper){
     console.log("A winner is you!!")
 }
 else{
