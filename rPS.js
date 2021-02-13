@@ -89,10 +89,10 @@ else{
 //code for button
 
 const rockButton = document.getElementById('rockBtn');
-rockBtn.addEventListener('click', playRock)
+rockBtn.addEventListener('mousedown', playRock)
 
 const paperButton = document.getElementById('paperBtn')
-paperBtn.addEventListener('click', playPaper)
+paperBtn.addEventListener('mousedown', playPaper)
 
 const scissorsButton = document.getElementById('scissorsBtn');
-scissorsBtn.addEventListener('click', playScissors)
+scissorsBtn.addEventListener('mousedown', playScissors)
