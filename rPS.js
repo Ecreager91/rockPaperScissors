@@ -73,11 +73,14 @@ else{
 }
 
 //code for button
-const rockBtn = document.querySelector('#document');
+
+
+;
+const rockBtn = document.getElementById('#rockBtn');
 window.addEventListener('click', playRock)
 
-const paperBtn = document.querySelector('#document');
+const paperBtn = document.getElementById('#paperBtn')
 window.addEventListener('click', playPaper)
 
-const scissorsBtn = document.querySelector('#document');
+const scissorsBtn = document.getElementById('#ScissorsBtn');
 window.addEventListener('click', playScissors)
