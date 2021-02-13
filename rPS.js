@@ -76,11 +76,11 @@ else{
 
 
 ;
-const rockBtn = document.getElementById('#rockBtn');
+const rockButton = document.getElementById('rockBtn');
 window.addEventListener('click', playRock)
 
-const paperBtn = document.getElementById('#paperBtn')
+const paperButton = document.getElementById('paperBtn')
 window.addEventListener('click', playPaper)
 
-const scissorsBtn = document.getElementById('#ScissorsBtn');
+const scissorsButton = document.getElementById('scissorsBtn');
 window.addEventListener('click', playScissors)
