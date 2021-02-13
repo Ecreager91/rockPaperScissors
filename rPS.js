@@ -8,13 +8,15 @@ const paper = "PAPER"
 const scissors = "SCISSORS"
 const rPS = [rock, paper, scissors]
 let computerPlay = computerSelection(rPS)
+//universal definitions^
+
 //code for computer play selection
 function computerSelection(rPS){
 let computerPick = rPS[Math.floor(Math.random() * rPS.length)];
   console.log(computerPick)
   return computerPick
 }
-//universal definitions^
+
 //player selects rock function
 let playRock = function playRoundRock(){
 if (rock === computerPlay){
@@ -74,8 +76,6 @@ else{
 
 //code for button
 
-
-;
 const rockButton = document.getElementById('rockBtn');
 rockBtn.addEventListener('click', playRock)
 
