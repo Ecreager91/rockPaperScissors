@@ -8,6 +8,8 @@ const paper = "PAPER"
 const scissors = "SCISSORS"
 const rPS = [rock, paper, scissors]
 let computerPlay = computerSelection(rPS)
+let playerGames = 0
+let computerWins = 0
 //universal definitions^
 
 //code for computer play selection
@@ -25,7 +27,8 @@ if (rock === computerPlay){
     return result
 }
 else if (computerPlay === scissors){
-  let result = "A winner is you!!"
+  let playerWins = playerGames++
+  let result = `A winner is you!! You've won ${playerWins} times and the computer has won ${computerWins} times`
     alert(result)
     return result
 }
@@ -44,7 +47,8 @@ if (paper === computerPlay){
     return result
 }
 else if (computerPlay === rock){
-   let result = "A winner is you!!"
+  let playerWins = playerGames++
+  let result = `A winner is you!! You've won ${playerWins} times and the computer has won ${computerWins} times`
     alert(result)
     return result
 }
@@ -63,7 +67,8 @@ if (scissors === computerPlay){
     return result
 }
 else if (computerPlay === paper){
-    let result = "A winner is you!!"
+  let playerWins = playerGames++
+  let result = `A winner is you!! You've won ${playerWins} times and the computer has won ${computerWins} times`
     alert(result)
     return result
 }
