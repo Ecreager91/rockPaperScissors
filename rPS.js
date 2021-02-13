@@ -24,19 +24,22 @@ let playRock = function playRoundRock(){
 if (rock === computerPlay){
   let result = `Draw. You've won ${playerGames} times and the computer has won ${computerWins} times`
     alert(result)
+    computerPlay = computerSelection(rPS)
     return result
 }
 else if (computerPlay === scissors){
   playerGames++
   let result = `A winner is you!! You've won ${playerGames} times and the computer has won ${computerWins} times`
     alert(result)
+    computerPlay = computerSelection(rPS)
     return result
-    computerSelection(rPS)
+    
 }
 else{
   computerWins++
     let result = `You Lose, Try Again. You've won ${playerGames} times and the computer has won ${computerWins} times`
     alert(result)
+    computerPlay = computerSelection(rPS)
     return result
 }
 }
@@ -46,19 +49,22 @@ let playPaper = function playRoundPaper(){
 if (paper === computerPlay){
     let result = `Draw. You've won ${playerGames} times and the computer has won ${computerWins} times`
     alert(result)
+    computerPlay = computerSelection(rPS)
     return result
 }
 else if (computerPlay === rock){
   playerGames++
   let result = `A winner is you!! You've won ${playerGames} times and the computer has won ${computerWins} times`
     alert(result)
+    computerPlay = computerSelection(rPS)
     return result
-    computerSelection(rPS)
+   
 }
 else{
     computerWins++
     let result = `You Lose, Try Again. You've won ${playerGames} times and the computer has won ${computerWins} times`
     alert(result)
+    computerPlay = computerSelection(rPS)
     return result
 }
 }
@@ -68,20 +74,22 @@ let playScissors = function playRoundScissors(){
 if (scissors === computerPlay){
   let result = `Draw. You've won ${playerGames} times and the computer has won ${computerWins} times`
     alert(result)
+    computerPlay = computerSelection(rPS)
     return result
 }
 else if (computerPlay === paper){
   playerGames++
   let result = `A winner is you!! You've won ${playerGames} times and the computer has won ${computerWins} times`
     alert(result)
+    computerPlay = computerSelection(rPS)
      return result
-  computerSelection(rPS)
    
 }
 else{
   computerWins++
     let result = `You Lose, Try Again. You've won ${playerGames} times and the computer has won ${computerWins} times`
     alert(result)
+    computerPlay = computerSelection(rPS)
     return result
 }
 }
@@ -89,10 +97,10 @@ else{
 //code for button
 
 const rockButton = document.getElementById('rockBtn');
-rockBtn.addEventListener('mousedown', playRock)
+rockBtn.addEventListener('mousedown', playRock, computerPlay)
 
 const paperButton = document.getElementById('paperBtn')
-paperBtn.addEventListener('mousedown', playPaper)
+paperBtn.addEventListener('mousedown', playPaper, computerPlay)
 
 const scissorsButton = document.getElementById('scissorsBtn');
-scissorsBtn.addEventListener('mousedown', playScissors)
+scissorsBtn.addEventListener('mousedown', playScissors, computerPlay)
