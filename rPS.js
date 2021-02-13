@@ -77,10 +77,10 @@ else{
 
 ;
 const rockButton = document.getElementById('rockBtn');
-window.addEventListener('click', playRock)
+rockBtn.addEventListener('click', playRock)
 
 const paperButton = document.getElementById('paperBtn')
-window.addEventListener('click', playPaper)
+paperBtn.addEventListener('click', playPaper)
 
 const scissorsButton = document.getElementById('scissorsBtn');
-window.addEventListener('click', playScissors)
+scissorsBtn.addEventListener('click', playScissors)
