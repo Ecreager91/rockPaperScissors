@@ -80,7 +80,7 @@ if (scissors === computerPlay){
 else if (computerPlay === paper){
   playerGames++
   let result = `A winner is you!! You've won ${playerGames} times and the computer has won ${computerWins} times`
-    alert(result)
+    alert(result)//
     computerPlay = computerSelection(rPS)
      return result
    
@@ -97,10 +97,10 @@ else{
 //code for button
 
 const rockButton = document.getElementById('rockBtn');
-rockBtn.addEventListener('mousedown', playRock, computerPlay)
+rockBtn.addEventListener('click', playRock)
 
 const paperButton = document.getElementById('paperBtn')
-paperBtn.addEventListener('mousedown', playPaper, computerPlay)
+paperBtn.addEventListener('click', playPaper)
 
 const scissorsButton = document.getElementById('scissorsBtn');
-scissorsBtn.addEventListener('mousedown', playScissors, computerPlay)
+scissorsBtn.addEventListener('click', playScissors)
