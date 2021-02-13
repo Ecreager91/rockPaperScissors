@@ -19,17 +19,17 @@ let computerPick = rPS[Math.floor(Math.random() * rPS.length)];
 let playRock = function playRoundRock(){
 if (rock === computerPlay){
   let result = "Draw"
-    console.log(result)
+    alert(result)
     return result
 }
 else if (computerPlay === scissors){
   let result = "A winner is you!!"
-    console.log(result)
+    alert(result)
     return result
 }
 else{
     let result = "You Lose, Try Again"
-    console.log(result)
+    alert(result)
     return result
 }
 }
@@ -38,17 +38,17 @@ else{
 let playPaper = function playRoundPaper(){
 if (paper === computerPlay){
     let result = "Draw"
-    console.log(result)
+    alert(result)
     return result
 }
 else if (computerPlay === rock){
    let result = "A winner is you!!"
-    console.log(result)
+    alert(result)
     return result
 }
 else{
     let result = "You Lose, Try Again"
-    console.log(result)
+    alert(result)
     return result
 }
 }
@@ -57,17 +57,17 @@ else{
 let playScissors = function playRoundScissors(){
 if (scissors === computerPlay){
   let result = "Draw"
-    console.log(result)
+    alert(result)
     return result
 }
 else if (computerPlay === paper){
     let result = "A winner is you!!"
-    console.log(result)
+    alert(result)
     return result
 }
 else{
   let result = "You Lose, Try Again"
-    console.log(result)
+    alert(result)
     return result
 }
 }
