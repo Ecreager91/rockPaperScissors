@@ -22,14 +22,14 @@ let computerPick = rPS[Math.floor(Math.random() * rPS.length)];
 //player selects rock function
 let playRock = function playRoundRock(){
 if (rock === computerPlay){
-  let result = `Draw. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
+  let result = `Computer chose rock. It's a Draw. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
     alert(result)
     computerPlay = computerSelection(rPS)
     return result
 }
 else if (computerPlay === scissors){
   playerGames++
-  let result = `A winner is you!! You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
+  let result = `Computer chose scissors. A winner is you!! You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
     alert(result)
     computerPlay = computerSelection(rPS)
     return result
@@ -37,7 +37,7 @@ else if (computerPlay === scissors){
 }
 else{
   computerWins++
-    let result = `You Lose, Try Again. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
+    let result = `Computer chose paper. You Lose, Try Again. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
     alert(result)
     computerPlay = computerSelection(rPS)
     return result
@@ -47,14 +47,14 @@ else{
 //player selects paper function
 let playPaper = function playRoundPaper(){
 if (paper === computerPlay){
-    let result = `Draw. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
+    let result = `Computer chose paper. It's a Draw. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
     alert(result)
     computerPlay = computerSelection(rPS)
     return result
 }
 else if (computerPlay === rock){
   playerGames++
-  let result = `A winner is you!! You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
+  let result = `Computer chose rock. A winner is you!! You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
     alert(result)
     computerPlay = computerSelection(rPS)
     return result
@@ -62,7 +62,7 @@ else if (computerPlay === rock){
 }
 else{
     computerWins++
-    let result = `You Lose, Try Again. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
+    let result = `Computer chose scissors. You Lose, Try Again. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
     alert(result)
     computerPlay = computerSelection(rPS)
     return result
@@ -72,14 +72,13 @@ else{
 //player selects scissors function 
 let playScissors = function playRoundScissors(){
 if (scissors === computerPlay){
-  let result = `Draw. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
-    alert(result)
+  let result = `Computer chose scissors.It's a Draw. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
     computerPlay = computerSelection(rPS)
     return result
 }
 else if (computerPlay === paper){
   playerGames++
-  let result = `A winner is you!! You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
+  let result = `Computer chose paper. A winner is you!! You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
     alert(result)//
     computerPlay = computerSelection(rPS)
      return result
@@ -87,7 +86,7 @@ else if (computerPlay === paper){
 }
 else{
   computerWins++
-    let result = `You Lose, Try Again. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
+    let result = `Computer chose: Rock. You Lose, Try Again. You've won ${playerGames} time(s) and the computer has won ${computerWins} time(s)`
     alert(result)
     computerPlay = computerSelection(rPS)
     return result
